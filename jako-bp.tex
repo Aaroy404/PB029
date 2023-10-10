@@ -1,0 +1,41 @@
+% Začátek preambule
+\documentclass[color]{fithesis3}
+\usepackage{beamerarticle}
+% Pro použití s třídou `fithesis3` je třeba ještě některé
+\AtBeginDocument{% příkazy předefinovat.
+  \let\subsection\section
+  \let\section\chapter
+  \let\tableofcontents\relax}
+\usepackage[czech]{babel}
+\title{Titulek prezentace}
+\subtitle{Podtitulek prezentace}
+\author{Jméno autora}
+% Konec preambule
+
+% Začátek dokumentu
+\begin{document}
+    \frame{\maketitle}
+    \frame{\tableofcontents}
+
+    \section{První část prezentace}
+    \subsection{Základní vlastnosti čísel}
+    \begin{frame}
+        \frametitle{Prvočísla}
+        \framesubtitle{Definice a příklady}
+        
+        % Příklad byl převzat z dokumentace třídy `beamer`.
+        \begin{definition}
+            \alert{Prvočíslo} je celé číslo, které má právě dva dělitele.
+        \end{definition}
+        \begin{example}
+            \begin{itemize}
+                \item 2 je prvočíslo (dva dělitele: 1 a 2).
+                \item 3 je prvočíslo (dva dělitele: 1 a 3).
+                \item 4 není prvočíslo (\alert{tři} dělitele: 1, 2, a 4).
+            \end{itemize}
+        \end{example}
+        \mode<presentation>{Tento text se zobrazí pouze v režimu prezentace.}
+        \mode<article>{Tento text se zobrazí pouze v režimu článku.}
+    \end{frame}
+\end{document}
+% Konec dokumentu
