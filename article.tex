@@ -1,0 +1,52 @@
+% Třída dokumentu
+\documentclass[a4paper]{article}
+% Preambule
+%% Balíčky
+\usepackage[czech]{babel}
+\usepackage[T1]{fontenc}
+\title{Značkování textu v \LaTeX u}
+\author{Adamko}
+\date{6. 9. 2023}
+% Tělo dokumentu
+\begin{document}
+\maketitle
+
+\begin{abstract}
+V tomto článku si ukážeme, jak můžeme v \LaTeX u vyznačit strukturu dokumentu.
+Po přečtení zdrojového kódu článku bude čtenář schopný připravovat vlastní
+dokumenty v \LaTeX u.
+\end{abstract}
+
+Toto je minimální \LaTeX ový dokument. Tento dokument sestává z několika odstavců.
+
+Odstavec obsahuje jednu nebo více vět, které mají tvořit určitý logický celek.
+Programátoři často dělí programy do samostatných modulů, které řeší jednu úlohu
+a jsou minimálně závislé na ostatních modulech. Podobně můžeme přemýšlet o odstavcích,
+které by měly být samoobsažné a pochopitelné i bez odkazů na okolní odstavce.
+
+
+Toto je další odstavec, který je oddělený od předchozího odstavce dvěma prázdnými řádky.
+
+\tableofcontents
+
+\section{Členění dokumentu}
+
+Odstavce členíme do sekcí a podsekcí. Každá sekce by měla být uvozena alespoň jedním
+odstavcem textu, který čtenáře seznámí s jejím obsahem. Nadpis sekce, po kterém okamžitě
+následuje nadpis podsekce se považuje za chybu.
+
+V této sekci si vytvoříme dvě podsekce pro ilustraci členění dokumentu.
+
+\subsection{První podsekce}
+
+Nadpisy (pod)sekcí udávají strukturu textu, ale nejsou přímou součástí textu.
+Porozumění textu by tedy nemělo záviset na nadpisech. Formulace ,,v této sekci se
+budeme zaobírat tématem z nadpisu sekce`` a podobné se považují za chybu.
+
+Toto je první podsekce našeho dokumentu.
+
+\subsection{Druhá podsekce}
+
+Toto je druhá podsekce našeho dokumentu.
+
+\end{document}
